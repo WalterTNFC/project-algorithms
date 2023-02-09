@@ -6,12 +6,13 @@ def find_duplicate(nums):
 
     if isinstance(nums[0], str) or nums[0] < 0:
         return False
-    # Ideia de usar sort sugerida na monitoria
+
+    # Ideia de ordenar sugerida na monitoria
     #  O avaliador estava quebrando por conta da complexbilidade
-    # sort_nums = sorted(nums)
+    sort_nums = sorted(nums)
 
-    # for i, x in enumerate(nums):
-    #     if x in nums[:i]:
-    #         return x
+    for i, num in enumerate(sort_nums[:-1]):
+        if num == sort_nums[i + 1]:
+            return num
 
-    # return False
+    return False
