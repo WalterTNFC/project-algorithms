@@ -5,4 +5,3 @@ def is_anagram(first_string, second_string):
     second_list = [*second_string.lower()]
     print(first_list)
     print(second_list)
-
