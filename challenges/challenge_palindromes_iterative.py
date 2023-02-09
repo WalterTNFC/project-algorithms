@@ -1,5 +1,5 @@
 def is_palindrome_iterative(word):
-    print("ola")
+    print("teste")
     # if len(word) == 0:
     #     return False
 
